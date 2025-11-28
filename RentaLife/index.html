@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+<header>
+  <div id="logo"><img src="source/logo.png" alt="" width="50px"></div>
+  
+  <nav id="nav-header">
+    <button class="btn" id="miespacio"><b>Mi espacio</b></button>
+    <button class="btn" id="registro"><b>Regístrate</b></button>
+  </nav>
+</header>
+
+<div class="principal">
+    <img src="source/FondoIndex.jpg" alt="Departamento" class="imgfondo">
+    <div id="busqueda">
+        <h2>Encuentra tu renta ideal</h2>
+
+        <div class="grupo-input">
+            <div class="input-inline">
+                <input type="text" placeholder="Ubicación">
+                <button class="boton-ubicacion"><b>Cerca de mí</b></button>
+            </div>
+        </div>
+
+        <div class="grupo-input">
+            <label>Tu ingreso mensual:</label> 
+        <div class="slider">
+            <div class="inputlabel">
+                <span>Mínimo</span>
+                <input type="number" id="min" value="1000" min="0" max="100000">
+            </div>
+            <input type="range" id="range" min="0" max="100000" value="2000">
+            <div class="inputlabel">
+                <span>Máximo</span>
+                <input type="number" id="max" value="5000" min="0" max="100000">
+            </div>
+        </div>
+        </div>
+        <p id="avisoSlider">(Desliza o escribe para ajustar)</p>
+        <a href="resultados.html"><button class="btn"><b>Buscar</b></button></a>
+        </div>
+</div>
+</body>
+</html>

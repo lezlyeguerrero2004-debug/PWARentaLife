@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/resultados.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/modal1.css">
+</head>
+<body>
+  <header>
+    <div id="logo"><img src="source/logo.png" width="50px"></div>
+
+  <nav id="nav-header">
+    <button id="filtro" class="btn" onclick="abrirModal1()"><img src="source/filtro-icon.png" width="25px"></button>
+    <!-- Ventana emergente del filtro-->
+    <div id="modal1" class="modal">
+      <div class="modal-contenido">
+        <span class="close" onclick="cerrarModal1()">&times;</span>
+        <h2>Filtrar resultados</h2>
+        <h3>Tipo de vivienda</h3>
+        <div id="tipovivienda">
+         <button class="botonesfiltro">Casa</button>
+         <button class="botonesfiltro">Departamento</button>
+         <button class="botonesfiltro">Cuarto</button>
+        </div>
+
+        <br>
+        <h3>Precios</h3>
+         <div class="slider">
+            <div class="inputlabel">
+                <span>Mínimo</span>
+                <input type="number" id="min" value="1000" min="0" max="100000">
+            </div>
+            <input type="range" id="range" min="0" max="100000" value="2000">
+            <div class="inputlabel">
+                <span>Máximo</span>
+                <input type="number" id="max" value="5000" min="0" max="100000">
+            </div>
+        </div>
+        <h3>Servicios/Detalles</h3>
+        <div id="Servicios">
+          <input type="checkbox"><label for="">Mascotas permitidas</label>
+        <br>
+        <input type="checkbox"><label for="">Cerca de centros comerciales</label>
+        <br>
+        <input type="checkbox"><label for="">Garage</label>
+        <br>
+        <input type="checkbox"><label for="">Transporte cercano</label>
+        <br>
+        <input type="checkbox"><label for="">Wifi</label>
+        <br>
+        <input type="checkbox"><label for="">Aire acondicionado</label>
+        <br>
+        <input type="checkbox"><label for="">Cuarto compartido</label>
+        <br>
+        <input type="checkbox"><label for="">Luz</label>
+        <br>
+        <input type="checkbox"><label for="">Agua potable</label>
+        <br>
+        <input type="checkbox"><label for="">Patio</label>
+        <br>
+        <input type="checkbox"><label for="">Amueblada</label>
+
+        </div>
+        
+        <br>
+        <div id="aplicarFiltro">
+          <button class="btn" id="aplicarfiltro" onclick="aplicarFiltro()"><b>Aplicar filtro</b></button>
+        </div>
+        
+      </div>
+      
+    </div>
+    <div id="otrosbotones">
+     <a href="mapa.html"><button id="mapa" class="btn"><img src="source/mapa-icon.png" width="20px"></button></a>
+     <button class="btn" id="miespacio"><b>Mi espacio</b></button>
+     <button class="btn" id="registro"><b>Regístrate</b></button>
+
+    </div>
+    
+
+  </nav>
+</header>
+<section id="resultados">
+    <h2>Resultados de la búsqueda</h2>
+    <div class="cards-container">
+        <a href="infovivienda.html"><div class="card">
+            <img src="source/vivienda1.png" alt="Vivienda 1">
+            <h3>Departamento en Tabasco 2000</h3>
+            <p>Precio: $12,000 MXN/mes</p>
+            <p>Ubicación: Fraccionamiento Renacimiento</p>
+        </div></a>
+        <div class="card">
+            <img src="source/vivienda2.png" alt="Vivienda 2">
+            <h3>Casa en Haciendas Tabasco 2000</h3>
+            <p>Precio: $10,000 MXN/mes</p>
+            <p>Ubicación: Cerrada Haciendas</p>
+        </div>
+        <div class="card">
+            <img src="source/vivienda3.png" alt="Vivienda 3">
+            <h3>Casa en Fracc. Bugambilias</h3>
+            <p>Precio: $11,000 MXN/mes</p>
+            <p>Ubicación: Fracc. Bugambilias</p>
+        </div>
+
+          <div class="card">
+            <img src="source/vivienda3.png" alt="Vivienda 3">
+            <h3>Casa en Fracc. Bugambilias</h3>
+            <p>Precio: $11,000 MXN/mes</p>
+            <p>Ubicación: Fracc. Bugambilias</p>
+        </div>
+
+        <div class="card">
+            <img src="source/vivienda3.png" alt="Vivienda 3">
+            <h3>Casa en Fracc. Bugambilias</h3>
+            <p>Precio: $11,000 MXN/mes</p>
+            <p>Ubicación: Fracc. Bugambilias</p>
+        </div>
+
+          <div class="card">
+            <img src="source/vivienda1.png" alt="Vivienda 1">
+            <h3>Departamento en Tabasco 2000</h3>
+            <p>Precio: $12,000 MXN/mes</p>
+            <p>Ubicación: Fraccionamiento Renacimiento</p>
+        </div>
+
+    </div>
+
+</section>
+ <!-- Ver filtro-->
+  <script>
+function abrirModal1() {
+  document.getElementById("modal1").style.display = "block";
+  document.getElementById("otrosbotones").classList.add("oculto");
+}
+
+function cerrarModal1() {
+  document.getElementById("modal1").style.display = "none";
+  document.getElementById("otrosbotones").classList.remove("oculto");
+}
+</script>
+
+</body>
+
+</html>
