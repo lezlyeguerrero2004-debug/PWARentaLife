@@ -1,0 +1,79 @@
+
+#usuario{
+    background-color: #CCCCCC;
+    border-radius: 15px;
+    text-align: center;
+    height: 400px;
+}
+
+#infoperfil{
+    display: flex;
+    justify-content: center;
+}
+
+#nombre{
+    padding-top: 20px;
+}
+
+
+.publicaciones {
+    padding: 20px;
+    width: 500px;
+}
+
+.titulo-publi {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.publicaciones {
+    padding: 20px;
+}
+
+.titulo-publi {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* ------- CARD DERECHA ------- */
+
+.titulo-publi {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* GRID DE VIVIENDAS */
+.viviendas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.card-vivienda {
+    width: 260px;
+    text-align: center;
+}
+
+.img-vivienda {
+    width: 250px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.nombre-vivienda {
+    margin: 10px 0 5px;
+}
+
+.precio {
+    margin: 0;
+    color: #444;
+}
+
+#botonpublicar {
+    text-align: center;
+    margin-top: 20px;
+}

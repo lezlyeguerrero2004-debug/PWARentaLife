@@ -88,7 +88,8 @@ iframe{
 }
 
 .infoprop{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
 }
 
 #fotoperfil{
@@ -109,5 +110,5 @@ iframe{
 
 #logowhats{
     width: 30px;
-    height: 30px;
+    height: 30
 }
