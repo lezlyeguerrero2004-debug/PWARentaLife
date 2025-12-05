@@ -1,0 +1,72 @@
+
+#resultados img{
+    width: 350px;
+    border-radius: 25px;
+}
+
+#resultados{
+    justify-content: center;
+    text-align: center;
+}
+
+.card{
+    width: 400px;
+    text-align: center;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+#filtro{
+    width: 50px;
+    text-align: center;
+
+}
+
+#nav-header{
+    display: flex;
+    justify-content: flex-end;
+    gap: 3px;
+
+}
+
+#mapa{
+    width: 50px;
+}
+h3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    cursor: pointer
+}
+
+.close:hover{
+    cursor: pointer;
+}
+
+#otrosbotones{
+    display: flex;
+    gap: 2px;
+}
+
+.oculto{
+    display: none !important;
+}
+
+
+#tipovivienda{
+    display: flex;
+}

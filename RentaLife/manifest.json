@@ -1,0 +1,25 @@
+{
+  "id": "index.php",
+  "name": "Rentalife",
+  "short_name": "Rentalife",
+  "description": "Encuentra tu renta ideal con filtros por ubicación y precio",
+  "start_url": "index.php",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "  #FF9B45",
+  "orientation": "portrait-primary",
+
+  "icons": [
+    {
+      "src": "source/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "source/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
